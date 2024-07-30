@@ -3,8 +3,6 @@ package br.com.parkment.vehicle_control.entities.vehicle.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 public class Vehicle {
@@ -14,22 +12,18 @@ public class Vehicle {
     private String color;
     private String licensePlate;
     private VehicleType type;
-    private Long currentBranch;
-    private LocalDateTime entranceTime;
-    private LocalDateTime exitTime;
+    private Long currentBranchId;
 
     public Vehicle() {}
 
-    public Vehicle(Long id, String brand, String model, String color, String licensePlate, VehicleType type, Long currentBranch, LocalDateTime entranceTime, LocalDateTime exitTime) {
+    public Vehicle(Long id, String brand, String model, String color, String licensePlate, VehicleType type, Long currentBranchId) {
         this.id = id;
         this.brand = brand;
         this.model = model;
         this.color = color;
         this.licensePlate = licensePlate;
         this.type = type;
-        this.currentBranch = currentBranch;
-        this.entranceTime = entranceTime;
-        this.exitTime = exitTime;
+        this.currentBranchId = currentBranchId;
     }
 
     public Vehicle(String brand, String model, String color, String licensePlate, VehicleType type) {
