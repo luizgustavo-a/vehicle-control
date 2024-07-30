@@ -38,8 +38,8 @@ This application serves as a REST API for managing ParkMent's parking lots. It p
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/parkment-vehicle-control.git
-   cd parkment-vehicle-control
+   git clone https://github.com/luizgustavo-a/vehicle-control.git
+   cd vehicle-control
    ```
 
 2. **Set up the database:**
